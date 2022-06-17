@@ -1,0 +1,31 @@
+.message__cont .message-body::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+.message__cont .message-body::-webkit-scrollbar-track {
+    background-color: #FFFFFF;
+}
+.message__cont .message-body::-webkit-scrollbar-thumb {
+    background-color: #3A3A3A;
+    border-radius: 0;
+}
+.message__cont .message-body::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.message__list .message__list__inr ul::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+.message__list .message__list__inr ul::-webkit-scrollbar-track {
+    background-color: #FFFFFF;
+}
+
+.message__list .message__list__inr ul::-webkit-scrollbar-thumb {
+    background-color: #3A3A3A;
+    border-radius: 0;
+}
+
+.message__list .message__list__inr ul::-webkit-scrollbar-corner {
+    background: transparent;
+}

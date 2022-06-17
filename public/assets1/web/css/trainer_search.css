@@ -1,0 +1,39 @@
+div.caro__search #myInput {
+  border: 2px solid #EEF0F2;
+  border-radius: 2px;
+  background-color: transparent;
+  color: #E8EFF7;
+}
+
+div.caro__search #myInput::-webkit-input-placeholder {
+  color: #E8EFF7;
+}
+
+div.caro__search #myInput:-ms-input-placeholder {
+  color: #E8EFF7;
+}
+
+div.caro__search #myInput::-ms-input-placeholder {
+  color: #E8EFF7;
+}
+
+div.caro__search #myInput::placeholder {
+  color: #E8EFF7;
+}
+
+.list__box .list__cont .tags ul li:last-child {
+  background: transparent;
+  cursor: pointer;
+  color: #9C9C9C;
+  position: relative;
+}
+
+.list__box .list__cont .tags ul li:last-child:before {
+  content: "|";
+  left: 0;
+  position: absolute;
+  font-size: 25px;
+  font-weight: 100;
+  line-height: 0.75;
+}
+/*# sourceMappingURL=trainer_search.css.map */

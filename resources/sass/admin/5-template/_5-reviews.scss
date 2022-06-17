@@ -1,0 +1,69 @@
+.reviews__record__panel {
+    .hed {
+        position: relative;
+        h4 {
+            position: absolute;
+            margin: 0;
+            top: 12px;
+        }
+    }
+    .dataTables_wrapper {
+        .dataTables_filter {
+            input {
+                width: 245px;
+            }    
+        }
+    }
+    .table {
+        &.table-review-record {
+            thead {
+                tr {
+                    th {
+                        &:nth-child(4) {
+                            width: 400px !important;
+                        }
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        .custom-flex {
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        .user-name {
+                            display: inline-flex;
+
+                            a {
+                                color: #707070;
+                            }
+                        }
+
+                        .user-img {
+                            display: inline-flex;
+                            border-radius: 3px;
+                            width: 32px;
+                            height: 32px;
+                            margin-right: 10px;
+                            overflow: hidden;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        p {
+                            font-size: 12px;
+                            line-height: 16px;
+                            font-weight: 500;
+                            margin: 0;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

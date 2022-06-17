@@ -1,0 +1,42 @@
+.terms-condition {
+    padding: 70px 0;
+    .terms__cont {
+        h4 {
+            font-size: 18px;
+            color: #3A3A3A;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 14px;
+            line-height: 24px;
+            color: #6B6B6B;
+            font-weight: 500;
+        }
+        ul {
+            li {
+                margin-bottom: 5px;
+                font-size: 14px;
+                font-weight: 500;
+                color: #6B6B6B;
+                &.level2 {
+                    margin-left: 17px;
+                    list-style-type: circle;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : $breakpoint-mobile-767) {
+    .terms-condition {
+        padding: 40px 0;
+        .container {
+            max-width: 96%;
+        }
+        .hed {
+            margin-bottom: 20px !important;
+        }
+    }
+}

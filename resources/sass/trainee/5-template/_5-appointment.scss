@@ -1,0 +1,246 @@
+.appointment__panel {
+    .nav-tabs {
+        border: 0;
+        margin: 0;
+
+        .nav-item {
+            margin-right: 30px;
+        }
+
+        .nav-link {
+            border: 0;
+            border-bottom: 2px solid;
+            border-color: transparent;
+            font-size: 16px;
+            color: #9C9C9C;
+            padding: 0;
+            padding-bottom: 5px;
+
+            &.active {
+                color: #0092D9;
+                font-weight: 600;
+                border-color: #0092D9;
+            }
+        }
+    }
+    &.panel__style {
+        .appoint__payment__detail {
+            .hed {
+                h3 {
+                    font-size: 18px;
+                    color:#333;
+                    .colored {
+                        color: #0092D9;
+                        margin-right: 5px;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.appiontment__main {
+    .form-group {
+        margin-bottom: 20px;
+
+        label {
+            font-weight: 600;
+            color: #7F7F7F;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+
+        .form-control {
+            border: 1px solid #9C9C9C;
+            font-size: 14px;
+            font-weight: 500;
+            color: #222222;
+            border-radius: 3px;
+            height: 48px;
+        }
+
+        select {
+            &.form-control {
+                padding-left: 7px;
+            }
+
+            &:invalid {
+                color: grey;
+            }
+        }
+
+        &.form-timepicker {
+            .icon {
+                position: absolute;
+                top: 41px;
+                right: 12px;
+                font-size: 10px;
+                color: grey;
+            }
+        }
+
+        &.form-session {
+            >label {
+                width: 100%;
+            }
+
+            .custom-control {
+                padding-left: 0;
+                display: inline-block;
+                margin: 12px 0;
+
+                .custom-control-label {
+                    padding-left: 22px;
+
+                    &::before {
+                        left: 0;
+                        top: 2px;
+                    }
+
+                    &::after {
+                        left: 0;
+                        top: 2px;
+                    }
+                }
+
+                .price {
+                    margin-left: 10px;
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: #0073AB;
+                }
+            }
+        }
+
+        &.form-action {
+            .btn {
+                font-size: 14px;
+                width: 150px;
+                height: 40px;
+                line-height: 27px;
+                cursor: pointer;
+
+                &:not(:disabled):not(.disabled).active {
+                    background: #0092D9;
+                    border-color: #c7d1d6;
+                }
+            }
+        }
+    }
+}
+
+.appoint__payment__detail {
+    .booking__session, .form-action {
+        padding-left: 0;
+    }
+    .form-action {
+        .btn {
+            font-size: 14px;
+            height: 40px;
+            line-height: 27px;
+            cursor: pointer;
+        }
+    }
+    .booking__session, .saved__card {
+        h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 15px 0 20px 0;
+            .colored {
+                color: #0092D9;
+            }
+        }
+    }
+    .booking__session {
+        padding-right: 80px;
+        .form-group {
+            h5 {
+                font-weight: 600;
+                font-size: 18px;
+                margin-bottom: 0;
+            }
+            .include {
+                color: #0073AB;
+                font-weight: 500;
+                font-size: 12px;
+            }
+            label {
+                font-weight: 600;
+                color: #7F7F7F;
+                font-size: 13px;
+                margin-bottom: 5px;
+            }
+            .form-control {
+                border: 1px solid #9C9C9C;
+                font-size: 14px;
+                font-weight: 500;
+                color: #9C9C9C;
+                border-radius: 3px;
+                height: 48px;
+                pointer-events: none;
+            }
+            &.form-date {
+                position: relative;
+                .icon {
+                    position: absolute;
+                    right: 10px;
+                    bottom: 8px;
+                    font-size: 22px;
+                    color: #9C9C9C;
+                }
+            }
+            &.form-location {
+                position: relative;
+                .form-control {
+                    padding-left: 30px;
+                }
+                .icon {
+                    position: absolute;
+                    left: 13px;
+                    bottom: 13px;
+                    color: #9C9C9C;
+                }
+            }
+        }
+        .total__amount {
+            h4 {
+                .colored {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    .saved__card {
+        .stripe {
+            display: inline-block;
+            margin-top: 25px;
+            border: 1px solid #9C9C9C;
+            margin-bottom: 20px;
+            border-radius: 3px;
+        }
+        .form-group {
+            label {
+                font-weight: 600;
+                color: #7F7F7F;
+                font-size: 13px;
+                margin-bottom: 5px;
+            }
+            .form-control {
+                border: 1px solid #9C9C9C;
+                font-size: 14px;
+                font-weight: 500;
+                color: #9C9C9C;
+                border-radius: 3px;
+                height: 48px;
+                pointer-events: none;
+            }
+            .btn {
+                font-size: 14px;
+                height: 40px;
+                line-height: 27px;
+                cursor: pointer;
+            }
+        }
+    }
+}

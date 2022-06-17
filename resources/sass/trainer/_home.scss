@@ -1,0 +1,13 @@
+div.caro__search {
+    #myInput {
+        border: 2px solid #EEF0F2;
+        border-radius: 2px;
+        background-color: transparent;
+        color: #E8EFF7;
+        background-position: 15px 17px;
+
+        &::placeholder {
+            color: #E8EFF7;;
+          }
+    }
+}

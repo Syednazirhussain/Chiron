@@ -1,0 +1,111 @@
+.trainees__panel {
+    margin-bottom:30px;
+    h5 {
+        color: #707070;
+        font-weight: 600;
+        font-size:14px;
+    }
+    .form-group {
+        display: inline-flex;
+        margin-bottom: 0;
+        .input-group {
+            display: inline-flex;
+        }
+        &.form__1 {
+            margin-right: 20px;
+            input {
+                max-width: 250px;
+                min-width: 250px;
+                border-radius: 3px;
+                background: #F3F3F3;
+                font-size: 13px;
+            }
+        }
+        &.form__2 {
+            label {
+                font-weight: 500;
+                margin-right: 20px;
+                margin-left: 4px;
+            }
+            .input-group {
+                .custom-control {
+                    padding-left: 0;
+                    &.custom-radio {
+                            label {
+                                padding-left: 23px;
+                                &:before, &:after {
+                                    top: 2px;
+                                    left: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        &.form__act {
+            float: right;
+            .btn {
+                font-weight: 500;
+                height: 32px;
+                line-height: 16px;
+                font-size: 13px;
+            }
+        }
+    }
+}
+.trainnes__wrapper {
+    .row {
+        margin-right: -20px;
+        margin-left: -20px;
+        .trainer-not-found {
+            height: calc(100vh - 280px);
+        }
+    }
+}
+.trainees__box {
+    margin-bottom: 30px;
+    padding: 0 20px;
+    .trainees__box__inr {
+        background: #fff;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 0 10px #0000001c;
+        img {
+            margin-bottom: 15px;
+            width: 64px;
+            height: 64px;
+            border-radius: 50px;
+        }
+        .btn {
+            width: 100%;
+            border-radius: 2px;
+            font-size: 14px;
+        }
+        h4 {
+            font-weight: 700;
+            color: #343D46;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+        p {
+            color: #858B90;
+            font-weight: 500;
+            font-size: 14px;
+            margin-bottom: 7px;
+        }
+        .type {
+            display: inline-block;
+            background: #D8F2FF;
+            padding: 6px 20px;
+            border-radius: 50px;
+            color: #0092D9;
+            font-weight: 500;
+        }
+        .action {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #dddd;
+        }
+    }
+}

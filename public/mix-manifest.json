@@ -1,0 +1,14 @@
+{
+    "/assets/admin/js/header.js": "/assets/admin/js/header.js",
+    "/assets/admin/js/footer.js": "/assets/admin/js/footer.js",
+    "/assets/web/js/header.js": "/assets/web/js/header.js",
+    "/assets/web/js/footer.js": "/assets/web/js/footer.js",
+    "/assets/trainer/js/header.js": "/assets/trainer/js/header.js",
+    "/assets/trainer/js/footer.js": "/assets/trainer/js/footer.js",
+    "/assets/trainee/js/header.js": "/assets/trainee/js/header.js",
+    "/assets/trainee/js/footer.js": "/assets/trainee/js/footer.js",
+    "/assets/trainee/css/trainee.css": "/assets/trainee/css/trainee.css",
+    "/assets/admin/css/admin.css": "/assets/admin/css/admin.css",
+    "/assets/trainer/css/trainer.css": "/assets/trainer/css/trainer.css",
+    "/assets/web/css/web.css": "/assets/web/css/web.css"
+}

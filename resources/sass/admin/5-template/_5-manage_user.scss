@@ -1,0 +1,125 @@
+.manage__user__panel {
+    .hed {
+        h4 {
+            font-size: 14px;
+            font-weight: 600;
+            color: #707070;
+        }
+    }
+    .nav-tabs {
+        border: 0;
+        .nav-item {
+            margin-right: 30px;
+        }
+        .nav-link {
+            padding: 0;
+            border: 0;
+            font-size: 14px;
+            color: #848484;
+            font-weight: 500;
+            padding-left: 25px;
+            position: relative;
+            &.active{
+                &::before {
+                    background: #3a3a3a;
+                }
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                display: block;
+                left: 0;
+                top: 2px;
+                background: #fff;
+                width: 15px;
+                border-radius: 50%;
+                height: 15px;
+                border: 3px solid #fff;
+                box-shadow: 0 0 0 2px #3a3a3a;
+            }
+        }
+    }
+    .dataTables_wrapper {
+        .dataTables_filter {
+            input {
+                width: 235px;
+            }    
+        }
+    }
+    .card-body {
+        padding: 0;
+    }
+    .tab-pane {
+        .hed {
+            position: relative;
+            h4 {
+                position: absolute;
+                margin: 0;
+                top: 12px;
+            }
+        }
+    }
+}
+
+.table {
+    &.table-manage-user {
+        tbody {
+            tr {
+                td {
+                    .custom-flex {
+                        display: flex;
+                        align-items: center;
+                    }
+                    .user-name {
+                        display: inline-flex;
+                        a {
+                            color: #707070;
+                        }
+                    }
+                    .user-img {
+                        display: inline-flex;
+                        border-radius: 3px;
+                        width: 32px;
+                        height: 32px;
+                        margin-right: 10px;
+                        overflow: hidden;
+                        img{
+                            width:100%;
+                            height:100%;
+                        }                         
+                    }
+                    .btn {
+                        padding: 0;
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: #707070;
+                        &.btn-edit {
+                            color:#2196F3;
+                        }
+                        &.btn-delete {
+                            color:#C1292E;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal{
+    .modal-content{
+        .modal-header{
+            border: 0;
+        }
+        .modal-body{
+            font-size: 16px;
+        }
+        .close{
+            right: 10px;
+            top: 8px;
+        }
+        .modal-footer{
+            border: 0;
+        }
+    }
+} 

@@ -1,0 +1,66 @@
+.manage__rates__panel {
+    position: relative;
+
+    .hed {
+        h4 {
+            margin: 0;
+            height: 32px;
+            line-height: 32px;
+        }
+
+        .btn {
+            float: right;
+            font-size: 12px;
+        }
+
+        &.hed__search {
+            h4 {
+                position: absolute;
+                top: 20px;
+            }
+
+            .btn {
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                height: 31px;
+                z-index: 99;
+            }
+        }
+    }
+
+    div {
+        &.dataTables_wrapper {
+            div {
+                &.dataTables_filter {
+                    padding-right: 155px;
+                }
+            }
+        }
+    }
+
+    .table {
+        &.table-manage-rates {
+            tbody {
+                tr {
+                    td {
+                        .btn {
+                            padding: 0;
+                            font-size: 15px;
+                            font-weight: 500;
+                            color: #707070;
+
+                            &.btn-edit {
+                                color: #2196F3;
+                            }
+
+                            &.btn-delete {
+                                color: #C1292E;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

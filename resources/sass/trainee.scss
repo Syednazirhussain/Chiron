@@ -1,0 +1,20 @@
+//bootstrap
+@import '../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css';
+
+//fontawesome
+@import '../plugins/fontawesome-free/css/all.min.css';
+
+//adminlte
+@import '../css/trainee/AdminLTE.min.css';
+
+//FilePond
+@import '../css/trainee/filepond/filepond.min.css';
+
+//Full Calendar
+@import '~fullcalendar/dist/fullcalendar.min.css';
+
+//DateRangePicker
+@import '../plugins/timepicker/jquery-timepicker.css';
+
+//mystyle
+@import './trainee/main.scss';

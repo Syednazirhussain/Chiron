@@ -1,0 +1,415 @@
+.trainee-signup {
+    padding: 60px 0;
+
+    .fom__steps__count {
+        margin-bottom: 40px;
+
+        .step__box {
+            &:first-child {
+                .step {
+                    &:after {
+                        width: 200px;
+                        margin-left: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .stripe__img {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.trainer-signup {
+    padding: 60px 0;
+
+    .fom__steps__count {
+        .step__box {
+            &:nth-child(2) {
+                .step {
+                    &:after {
+                        content: "";
+                        width: 203px;
+                        height: 3px;
+                        display: block;
+                        background: #D4E7F1;
+                        position: absolute;
+                        top: 8px;
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.signup__fom {
+    .form {
+        background-color: #ffffff;
+        margin: 40px auto 0 auto;
+    }
+
+    &.steps__fom {
+        background: #fff;
+        box-shadow: 0 0 30px #0000001a;
+        padding: 40px 60px;
+
+        .tab {
+            display: none;
+        }
+
+        .hed {
+            h2 {
+                &:before {
+                    content: none;
+                }
+            }
+        }
+
+        .form-group {
+            position: relative;
+            .error-email {
+                position: absolute;
+                right: 13px;
+                font-size: 12px;
+                top: 2px;
+            }
+            label {
+                font-weight: 600;
+                color: #7F7F7F;
+                font-size: 13px;
+                margin-bottom: 5px;
+            }
+
+            select {
+                &.form-control {
+                    color: #798189;
+                }
+            }
+
+            .field-icon {
+                position: absolute;
+                top: 48px;
+                right: 18px;
+            }
+
+            .form-control {
+                border: 2px solid #cdcdcd;
+                font-size: 14px;
+                font-weight: 500;
+                color: #222222;
+
+                &.invalid {
+                    border: 2px solid #ff5d5d;
+                }
+            }
+
+            &.form-file {
+                .form-control {
+                    height: 60px;
+                    line-height: 60px;
+                    padding: 0 10px 0 12px;
+                }
+            }
+
+            &.form-checkboxes {
+                background: #F6F6F6;
+                padding: 15px;
+
+                h5 {
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #7F7F7F;
+                    margin-bottom: 12px;
+                }
+
+                .form-check-input[type=checkbox] {
+                    width: 20px;
+                    height: 20px;
+                    font-size: 12px;
+                    background-size: 15px;
+                    margin-right: 10px;
+                    position: relative;
+                    top: -2px;
+                    border: 2px solid #6B6B6B;
+                }
+
+                .form-check-input {
+                    &:checked[type=checkbox] {
+                        border: 2px solid #0092d9;
+                        background-color: #0092d9;
+                    }
+                }
+
+                .form-check {
+                    label {
+                        font-weight: 500;
+                    }
+                }
+
+                &.form-privacy {
+                    background: transparent;
+
+                    .form-check-input {
+                        &[type=checkbox] {
+                            margin-right: -5px;
+                        }
+                    }
+
+                    .form-check {
+                        label {
+                            margin-left: 10px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .actions__btn {
+        text-align: right;
+        padding: 0 12px;
+        margin-top: 20px;
+
+        .btn {
+            min-width: 200px;
+            line-height: 30px;
+            font-size: 15px;
+
+            &.btn-primary-o {
+                margin-right: 20px;
+            }
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+.fom__steps__count {
+    text-align: center;
+    margin-bottom: 50px;
+
+    .step__box {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        width: 220px;
+
+        .heading {
+            display: block;
+            margin-top: 30px;
+            color: #6B6B6B;
+            font-weight: 500;
+            font-size: 15px;
+        }
+
+        .step {
+            height: 10px;
+            width: 10px;
+            margin: 0 2px;
+            background-color: #0092D9;
+            border: none;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        &:first-child {
+            .step {
+                &:after {
+                    content: '';
+                    width: 208px;
+                    height: 3px;
+                    display: block;
+                    background: #D4E7F1;
+                    position: absolute;
+                    top: 8px;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        &.active {
+            .step {
+                box-shadow: 0 0 0 25px #d4e7f1;
+            }
+
+            .heading {
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.auth-status {
+    min-height: calc(100vh - 387px);
+    display: flex;
+    align-items: center;
+
+    .hed {
+        padding-left: 10%;
+
+        h3 {
+            font-weight: 600;
+
+            .highlight {
+                color: #0092d9;
+            }
+
+            .prog {
+                color: #7F7F7F;
+                font-size: 13px;
+                position: relative;
+                top: -3px;
+                margin-left: 15px;
+
+                &:before {
+                    content: "";
+                    width: 10px;
+                    height: 10px;
+                    display: inline-block;
+                    border-radius: 50px;
+                    background: #FF8000;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        p {
+            color: #7F7F7F;
+            font-weight: 500;
+        }
+
+        .btn {
+            &.btn-primary {
+                min-width: 200px;
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : $breakpoint-desktop-lg) {
+    .signup__fom {
+        &.steps__fom {
+            width: 100%;
+        }
+    }
+}
+@media only screen and (max-width : $breakpoint-ipad-md) {
+    .trainer-signup, .trainee-signup {
+        .container {
+            max-width: 96%;
+        }
+        .signup__fom {
+            &.steps__fom {
+                padding: 40px 30px;
+            }
+        }
+    }
+}
+@media only screen and (max-width : $breakpoint-mobile-767) {
+    .trainer-signup , .trainee-signup{
+        .signup__fom {
+            &.steps__fom {
+                box-shadow: none;
+            }
+        }
+    }
+    .trainer-signup {
+        .container {
+            max-width: 96%;
+        }
+
+        .signup__fom {
+            &.steps__fom {
+                padding: 0;
+                box-shadow: none;
+            }
+        }
+
+        .fom__steps__count {
+            .step__box {
+                width: 170px;
+
+                &:first-child {
+                    .step {
+                        &:after {
+                            width: 155px;
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+                    .step {
+                        &:after {
+                            width: 150px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : $breakpoint-mobile-533) {
+    .trainee-signup {
+        .fom__steps__count {
+            .step__box {
+                width: 140px;
+                .heading {
+                    font-size: 11px;
+                }
+                &:first-child {
+                    .step {
+                        &:after {
+                            width: 120px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width : $breakpoint-mobile-580) {
+    .trainer-signup {
+        .fom__steps__count {
+            .step__box {
+                width: 120px;
+                .heading {
+                    font-size: 11px;
+                }
+                &:first-child {
+                    .step {
+                        &:after {
+                            width: 105px;
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+                    .step {
+                        &:after {
+                            width: 100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .signup__fom {
+        .actions__btn {
+            .btn {
+                min-width: 120px;
+            }
+        }
+    }
+}

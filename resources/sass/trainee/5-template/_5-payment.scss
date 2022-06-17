@@ -1,0 +1,38 @@
+.paymentInfo__panel {
+    &.panel__style {
+        .hed {
+            h4 {
+                font-size: 18px;
+            }
+        }
+    }
+    .payment-img {
+        margin: 20px 0;
+    }
+
+    .form-group {
+        label {
+            font-weight: 600;
+            color: #7F7F7F;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+        .form-control {
+            border: 1px solid #9C9C9C;
+            font-size: 14px;
+            font-weight: 500;
+            color: #222222;
+            border-radius: 3px;
+            height: 48px;
+        }
+        .btn {
+            &.btn-primary {
+                font-size: 16px;
+                width: 100px;
+            }
+            &.btn-default {
+                width: 100px;
+            }
+        }
+    }
+}

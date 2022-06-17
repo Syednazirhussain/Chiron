@@ -1,0 +1,17 @@
+//bootstrap
+@import '../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css';
+
+//fontawesome
+@import '../plugins/fontawesome-free/css/all.min.css';
+
+//adminlte
+@import '../css/admin/AdminLTE.min.css';
+
+//datetimepicker
+@import '../plugins/datetimepicker/bootstrap-datetimepicker.css';
+
+//datatable
+@import '../plugins/datatables-bs4/css/dataTables.bootstrap4.css';
+
+//mystyle
+@import './admin/main.scss';

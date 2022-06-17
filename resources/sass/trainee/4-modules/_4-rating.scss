@@ -1,0 +1,74 @@
+.rating-widget {
+    margin-bottom: 10px;
+    min-height: 55px;
+    .success-box {
+        text-align: center;
+        color: green;
+    }
+}
+.rating-stars {
+    ul {
+        list-style-type:none;
+        padding:0;
+        margin-bottom: 10px;
+        & > li.star {
+            display:inline-block;
+            & i.fa {
+                font-size:14px; 
+                color:#ccc; 
+            }
+            &.hover > i.fa {
+                color:#FDCC0D;
+            }
+            &.selected > i.fa {
+                color:#FDCC0D;
+            }
+        }
+    }
+}
+
+.starrating-area {
+    .fas { 
+        color: #ffc526; 
+    }
+    &.star-0 {
+        .fa-star { 
+            color: #d5dce1; 
+        }
+    }
+    &.star-1 {
+        .fas {
+            &:nth-child(1)~.fas { 
+                color: #d5dce1; 
+            }
+        }
+    }
+    &.star-2 {
+        .fas {
+            &:nth-child(2)~.fas { 
+                color: #d5dce1; 
+            }
+        }
+    }
+    &.star-3 {
+        .fas {
+            &:nth-child(3)~.fas { 
+                color: #d5dce1; 
+            }
+        }
+    }
+    &.star-4 {
+        .fas {
+            &:nth-child(4)~.fas { 
+                color: #d5dce1; 
+            }
+        }
+    }
+    &.star-5 {
+        .fas {
+            &:nth-child(5)~.fas { 
+                color: #d5dce1; 
+            }
+        }
+    }
+}

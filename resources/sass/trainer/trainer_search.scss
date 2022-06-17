@@ -1,0 +1,29 @@
+@import '_home.scss';
+
+.list__box {
+    .list__cont {
+        .tags {
+            ul {
+
+                li {
+
+                    &:last-child{
+                        background:transparent;cursor:pointer;color:#9C9C9C;position: relative;
+                    }
+                    &:last-child:before{
+                        content:"|";left:0;position:absolute;font-size:25px;font-weight:100;line-height:0.75;
+                    }
+                }
+            } 
+        } 
+    } 
+}
+.message__panel{
+
+    .panel__style {
+        height: auto;
+    }
+}  
+
+
+

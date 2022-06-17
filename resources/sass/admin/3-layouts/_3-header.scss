@@ -1,0 +1,132 @@
+.navbar {
+    &.main-header {
+        border: 0;
+        padding: 16px 30px;
+
+        h3 {
+            font-weight: 600;
+            font-size: 22px;
+            color: #3A3A3A;
+            margin: 0;
+        }
+        .navbar-nav {
+            .nav-link {
+                &[data-widget="pushmenu"] {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+        .nav-item {
+            &.user-menu {
+                margin-left: 20px;
+                .dropdown-menu {
+                    border: 0;
+                    box-shadow: 0 0 10px #0000004f;
+                    border-radius: 5px;
+                    width: auto;
+                    min-width: auto;
+                    padding: 6px;
+                    margin-top: 10px;
+                    .dropdown-item {
+                        color: #707070;
+                        font-size:13px;
+                        font-weight: 500;
+                        &:active {
+                            background: #fff;
+                        }
+                        .icon {
+                            margin-right: 7px;
+                        }
+                    }
+                }
+                .nav-link {
+                    padding: 0;
+                    display: inline-flex;
+                    align-items: center;
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50px;
+                        margin: 0;
+                        border: 1px solid;
+                    }
+                    span {
+                        font-weight: 600;
+                        margin-right: 10px;
+                        color: #3A3A3A;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .user-notify {
+            .nav-link {
+                padding: 0;
+                background: #DBDBDB;
+                line-height: 39px;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                font-size: 22px;
+                color: #3A3A3A;
+                border-radius: 50px;
+
+                .badge {
+                    &.navbar-badge {
+                        width: 8px;
+                        height: 8px;
+                        background: #0092D9;
+                        display: block;
+                        border-radius: 50px;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        box-shadow: 0 0 0 2px #eef0f2;
+                    }
+                }
+            }
+            .dropdown-menu {
+                border: 0;
+                box-shadow: 0 0 10px #0000004f;
+                border-radius: 5px;
+                margin-top: 10px;
+                .dropdown-item {
+                    overflow:hidden;
+                    text-overflow: ellipsis;
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: #707070;
+                    .icon {
+                        margin-right: 5px;
+                    }
+                    &:active {
+                        background: #fff;
+                    }
+                    &.active {
+                        background: #fff;
+                        color: #0092d9;
+                        .icon {
+                            color: #0092d9;
+                        }
+                    }
+                    &.dropdown-header {
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        &:active {
+                            background: #fff;
+                        }
+                    }
+                    &.dropdown-footer {
+                        color: #0092d9;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        &:active {
+                            background: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

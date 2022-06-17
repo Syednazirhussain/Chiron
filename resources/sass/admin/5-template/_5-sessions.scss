@@ -1,0 +1,60 @@
+.sessions__user__panel {
+    .hed {
+        position: relative;
+        padding: 0 0 10px 0;
+        h4 {
+            position: absolute;
+            margin: 0 0 10px 0;
+            font-size: 13px;
+        }
+    }
+    .float-right{
+        margin: 0 0 10px 0;
+        .text-success{
+            color: #02BC77;
+            margin-right: 15px;
+        }
+        .fa-arrow-right{
+            color: #6c757d;
+        }
+    }
+    .dataTables_wrapper {
+        .dataTables_filter {
+            input {
+                width: 245px;
+            }    
+        }
+    }
+    .table {
+        &.table-all-sessions {
+            tbody {
+                tr {
+                    td {
+                        .custom-flex {
+                            display: flex;
+                            align-items: center;
+                        }
+                        .user-name {
+                            display: inline-flex;
+                            a {
+                                color: #707070;
+                            }
+                        }
+                        .user-img {
+                            display: inline-flex;
+                            border-radius: 3px;
+                            width: 32px;
+                            height: 32px;
+                            margin-right: 10px;
+                            overflow: hidden;
+                            img{
+                                width:100%;
+                                height:100%;
+                            }                         
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

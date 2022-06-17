@@ -1,0 +1,100 @@
+.earning__user__panel {
+    .hed {
+        &.hed__filter {
+            .filter__tab {
+                float: right;
+                h5 {
+                    display: inline-block;
+                    font-size: 13px;
+                    font-weight: 600;
+                    color: #707070;
+                    margin-right: 10px;
+                }
+                .nav {
+                    display: inline-flex;
+                    border: 0;
+                    .nav-item {
+                        margin-left: 10px;
+                    }
+                    .nav-link {
+                        border: 0;
+                        padding: 6px 10px;
+                        background: #EEF0F2;
+                        color: #6B6B6B;
+                        border-radius: 4px;
+                        font-size: 12px;
+                        font-weight: 600;
+                        &.active {
+                            background: #0092D9;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .tab-content {
+        position: relative;
+        .hed {
+            h4 {
+                position: absolute;
+                top: -40px;
+            }
+        }
+    } 
+    .table {
+        &.table-earnings {
+            thead {
+                tr {
+                    th {
+                        vertical-align: middle;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        .custom-flex {
+                            display: flex;
+                            align-items: center;
+                        }
+                        .user-name {
+                            display: inline-flex;
+                            a {
+                                color: #707070;
+                            }
+                        }
+                        .user-img {
+                            display: inline-flex;
+                            border-radius: 3px;
+                            width: 32px;
+                            height: 32px;
+                            margin-right: 10px;
+                            overflow: hidden;
+                            img{
+                                width:100%;
+                                height:100%;
+                            }                         
+                        }
+                        .colored {
+                            color: #0092D9;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+            tfoot {
+                tr {
+                    td {
+                        font-size: 12px;
+                        background: #0073AB;
+                        vertical-align: middle;
+                        color: #fff;
+                        padding: 0.55rem;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

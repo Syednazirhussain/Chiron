@@ -1,0 +1,386 @@
+.ui-timepicker-standard {
+    max-height: 100px;
+    overflow-y: auto;
+}
+.ui-timepicker-standard .ui-menu-item {
+    font-size: 12px;
+}
+
+.ui-timepicker-standard a {
+    text-align: left;
+    padding-left: 8px;
+}
+body {
+    &.trainer-page {
+        .fixed-chatbox {
+            &.direct-chat {
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                margin: 0;
+                height: calc(100vh - 82px);
+                top: 82px;
+                width: 335px;
+                border-top-right-radius: 0;
+                box-shadow: -3px -2px 10px #00000066;
+                border-bottom-left-radius:0;
+
+                &.collapsed-card {
+                    height: 45px;
+                    top: auto;
+                }
+            }
+        }
+    }
+}
+
+.fixed-chatbox {
+    &.direct-chat {
+        &.collapsed-card {
+            height: 45px;
+            bottom: 0;
+            top: auto;
+            width: 335px;
+            transition: .8s ease;
+
+            .btn-arr {
+                transform: rotate(90deg);
+                position: relative;
+                top: -2px;
+            }
+            .message__box__wrapper {
+                .card-header {
+                    padding: 15px 40px 14px 10px;
+                    border-radius: 0;
+                }
+            }
+            .appointment__box__wrapper {
+                .card-header {
+                    &.card-full-header {
+                        display: none;
+                    }
+                    &.card-collapse-header {
+                        display: flex;
+                        padding: 15px 40px 14px 10px;
+                    }
+                }
+            }
+        }
+
+        .message__box__wrapper {
+            &.hidden {
+                display: none;
+            }
+            .card-header {
+                background: #3A3A3A;
+                border-radius: 0;
+                padding: 20px 40px 20px 10px;
+                align-items: center;
+                display: flex;
+                width: 100%;
+                border-top-left-radius: 0.25rem;
+                border-top-right-radius: 0.25rem;
+                .btn {
+                    color: #fff;
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+
+                h3 {
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+
+                .card-tools {
+                    .btn {
+                        position: absolute;
+                        right: 15px;
+                        padding: 2px;
+                    }
+                }
+            }
+
+            .direct-chat-text {
+                background: #707070;
+                border: 1px solid #707070;
+                color: #fff;
+                padding: 15px;
+
+                &:before {
+                    border-right-color: #707070;
+                }
+
+                &:after {
+                    border-right-color: #707070;
+                }
+
+                .time {
+                    display: block;
+                    text-align: right;
+                    font-size: 10px;
+                    color: #c9c9c9;
+                    margin-top: 4px;
+                }
+            }
+
+            .right {
+                .direct-chat-text {
+
+                    &:after,
+                    &:before {
+                        border-left-color: #707070;
+                        border-right-color: transparent;
+                    }
+
+                    .time {
+                        text-align: left;
+                    }
+                }
+            }
+
+            .card-appointment {
+                padding: 10px;
+                text-align: center;
+                border-bottom: 1px solid #ddd;
+                margin: 0 20px;
+
+                .btn {
+                    &.btn-primary {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .direct-chat-msg {
+                margin-bottom: 25px;
+            }
+
+            .direct-chat-messages {
+                height: calc(100vh - 260px);
+                overflow: auto;
+            }
+
+            .card-footer {
+                background: #fff;
+
+                .emoji-button {
+                    position: absolute;
+                    right: 40px;
+                    top: 8px;
+                }
+
+                .emoji-wysiwyg-editor {
+                    width: 100%;
+                    height: 40px;
+                    border-radius: 10px;
+                    border: 1px solid #D4D4D4;
+                    line-height: 38px;
+                    padding: 0 40px 0 10px;
+                    background: #fff;
+                }
+
+                .btn {
+                    &.btn-send {
+                        position: absolute;
+                        right: 12px;
+                        transform: rotate(45deg);
+                        color: #0092d9;
+                        padding: 0;
+                        top: 6px;
+                    }
+                }
+            }
+        }
+        .appointment__box__wrapper {
+            &.hidden {
+                display: none;
+            }
+            .card-header {
+                background: #3a3a3a;
+                padding-bottom: 15px;
+                &.card-full-header {
+                    .card-tools {
+                        position: absolute;
+                        right: 20px;
+                        top: 8px;
+                    }
+                    .btn-tool {
+                        &.btn-arr {
+                            position: absolute;
+                            top: 15px;
+                            left: 10px;
+                        }
+                    }
+                }
+                &.card-collapse-header {
+                    display: none;
+                    background: #3A3A3A;
+                    border-radius: 0;
+                    padding: 20px 40px 20px 10px;
+                    align-items: center;
+                    width: 100%;
+                    .btn {
+                        color: #fff;
+    
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+    
+                    h3 {
+                        color: #fff;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+    
+                    .card-tools {
+                        .btn {
+                            position: absolute;
+                            right: 15px;
+                            padding: 2px;
+                        }
+                    }
+                }
+                .btn {
+                    &.btn-tool {
+                        color: #FFFFFF;
+                    }
+                }
+                .card-semi-header {
+                    text-align: center;
+                    .profile {
+                        width: 64px;
+                        height: 64px;
+                        overflow: hidden;
+                        border-radius: 50%;
+                    }
+                    h3 {
+                        color: #fff;
+                        font-size: 14px;
+                        margin: 10px 0 5px 0;
+                    }
+                    p {
+                        color: #fff;
+                        font-size: 12px;
+                        line-height: 14px;
+                        margin-bottom: 8px;
+                        i {
+                            margin-right: 5px;
+                        }
+                    }
+                    .btn {
+                        &.btn-primary {
+                            font-size:14px;
+                            width: 120px;
+                            border-radius: 50px;
+                        }
+                    }
+                }
+            }  
+            .card-body {
+                padding: 13px 10px 10px 10px;
+                overflow-y: auto;
+                max-height: calc(100vh - 265px);
+                .create-appointment {
+                    h3 {
+                        font-size: 18px;
+                        color: #0092D9;
+                        font-weight: 700;
+                    }
+                }
+                .startendtime {
+                    margin: 5px 20px 5px 20px;
+                    select {
+                        width: 275px;
+                        height: 35px;
+                        border: 1px solid #bbbbbb;
+                        border-radius: 3px;
+                        font-size: 12px;
+                        padding: 0 5px;
+                    }
+                    .form-group {
+                        width: 47%;
+                        display: inline-block;
+                        margin-right: 2%;
+                        position: relative;
+                        label {
+                            width: 100%;
+                            color: #3A3A3A;
+                            font-weight: 500;
+                            margin-bottom: 3px;
+                            font-size: 13px;
+                        }
+                        .timepicker  {
+                            width: 100%;
+                            border: 1px solid #ddd;
+                            border-radius: 4px;
+                            padding: 6px 20px 6px 10px;
+                            font-size: 14px;
+                        }
+                        .icon {
+                            position: absolute;
+                            top: 31px;
+                            right: 10px;
+                            color: #a0a0a0;
+                        }
+                    }
+                }
+                .locations {
+                    margin: 0 20px 0 20px;
+                    .form-group {
+                        position: relative;
+                        &.trainerlocation {
+                            margin-bottom: 20px;
+                        }
+                        label {
+                            color: #3A3A3A;
+                            font-weight: 500;
+                            margin-bottom: 3px;
+                            position: absolute;
+                            top: -8px;
+                            background: #fff;
+                            font-size: 11px;
+                            left: 17px;
+                        }
+                        .icon {
+                            position: absolute;
+                            top: 13px;
+                            left: 10px;
+                            color: #9e9e9e;
+                        }
+                        .form-control {
+                            padding: 11px 10px 5px 25px;
+                            font-size: 13px;
+                            &.disabled {
+                                background: #F3F3F3;
+                                pointer-events: none;
+                            }
+                        }
+                    }
+                }
+                .actions {
+                    margin: 0 20px;
+                    .btn {
+                        padding: 5px;
+                        width: 48%;
+                        font-size: 14px;
+                        line-height: 22px;
+                        display: inline-block;
+                        margin-right: 2%;
+                        &.btn-book {
+                            background: #3a3a3a;
+                            border: 1px solid #3a3a3a;
+                            color: #fff;
+                        }
+                        &.btn-primary-o {
+                            margin-right:0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

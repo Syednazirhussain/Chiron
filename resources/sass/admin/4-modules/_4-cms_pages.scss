@@ -1,0 +1,18 @@
+.terms__condition {
+    .cke_1 {
+        &.cke {
+            height: calc(100vh - 215px);
+        }
+    }
+    .cke_contents {
+        &.cke_reset {
+            height: calc(100vh - 318px) !important;
+        }
+    }
+    .action__btn {
+        .btn {
+            font-size: 14px;
+            width: 100px;
+        }
+    }
+}
